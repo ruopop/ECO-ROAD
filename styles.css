@@ -1,0 +1,286 @@
+h1 {
+  text-decoration: underline;
+}
+
+.top-header {
+  position: fixed;
+
+  background-color: rgb(64, 105, 64);
+
+  width: 100%;
+
+  height: 90px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 0 20px;
+}
+
+.Menu-horizontal {
+  list-style: none;
+
+  display: flex;
+
+  justify-content: space-around;
+
+  width: 100%;
+
+  max-width: 1200px;
+}
+
+.Menu-horizontal li {
+  display: block;
+
+  padding: 15px 20px;
+
+  color: black;
+}
+
+.Menu-horizontal li a {
+  text-decoration: none;
+}
+
+.Menu-horizontal li a:hover {
+  color: red;
+}
+
+.Menu-vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  width: 200px;
+
+  background-color: white;
+}
+
+.Menu-horizontal li:hover .Menu-vertical {
+  display: block;
+}
+.imagen-empresa img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+.contenedor-empresa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+  gap: 40px;
+}
+.texto-empresa {
+  flex: 1;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.imagen-empresa {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.video-empresa {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.video-wrapper {
+  width: 100%;
+  max-width: 800px; /* ajusta si quieres un video más pequeño/grande */
+  aspect-ratio: 16 / 9; /* mantiene 16:9 sin hacks */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+}
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.video-empresa,
+.imagen-empresa {
+  justify-content: center;
+}
+.video-wrapper,
+.imagen-empresa img {
+  max-width: 100%;
+}
+/* --- Sección de Registro --- */
+.seccion-registro {
+  padding: 120px 20px 60px; /* respeta el header fijo */
+  display: flex;
+  justify-content: center;
+}
+
+.registro-card {
+  width: 100%;
+  max-width: 720px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  padding: 28px;
+}
+
+.seccion-registro h2 {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+}
+
+.seccion-registro .sub {
+  margin: 0 0 18px 0;
+  color: #555;
+}
+
+.form-registro {
+  display: grid;
+  gap: 16px;
+}
+
+.form-row {
+  display: grid;
+  gap: 6px;
+}
+
+.form-row label,
+.form-group legend {
+  font-weight: 600;
+}
+
+input[type="text"],
+select {
+  padding: 10px 12px;
+  border: 1px solid #cfd4d1;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+input[type="text"]:focus,
+select:focus {
+  border-color: rgb(64, 105, 64);
+  box-shadow: 0 0 0 3px rgba(64, 105, 64, 0.15);
+}
+
+.form-group {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-interes {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 8px 0 0 0;
+}
+
+.lista-interes li {
+  margin: 6px 0;
+}
+
+.radio-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+}
+
+.btn-enviar {
+  width: fit-content;
+  padding: 10px 18px;
+  border: 1px solid #cfd4d1;
+  border-radius: 8px;
+  background: #f4f6f5;
+  cursor: pointer;
+  transition: transform 0.04s ease, background 0.2s ease;
+}
+
+.btn-enviar:hover {
+  background: #e9eeec;
+}
+.btn-enviar:active {
+  transform: translateY(1px);
+}
+
+/* Footer general */
+.footer {
+  background-color: #222; /* Fondo oscuro para contraste */
+  color: white;
+  padding: 2rem 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Contenedor flexible para 3 columnas */
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+/* Marca o logotipo */
+.footer-brand {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+/* Enlaces legales */
+.footer-links {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-links a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 0.3rem 0;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* Redes sociales con íconos */
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-social img {
+    margin-bottom: 0.5rem;
+  }
+}
