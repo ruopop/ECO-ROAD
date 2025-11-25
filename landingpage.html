@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Presencial</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    
+
+ 
+    <nav class="top-header">
+      <a href="" class="logo">
+        <img height="80" width="60" src="imagenes/HP.png" />
+      </a>
+
+      <ul class="Menu-horizontal">
+        <li><a href="">Soluciones</a></li>
+        <li><a href="">Servicios</a></li>
+        <li>
+          Inicio
+          <ol class="Menu-vertical">
+            <li>Co2</li>
+            <li>Rutas Seguras</li>
+            <li>Cantidad emitida</li>
+            <li>Testimonios</li>
+          </ol>
+        </li>
+        <li>Resumen</li>
+        <li>Ayuda</li>
+      </ul>
+    </nav>
+
+    <!-- Sección principal con texto e imagen -->
+    <section class="seccion-rutas">
+      <div class="contenedor-empresa">
+        <div class="texto-empresa">
+          <h1>EcoRoad</h1>
+          <p>
+            EcoRoad es una empresa dedicada a la creación de rutas sostenibles
+            que promueven un transporte más ecológico y eficiente. Nuestro
+            objetivo es reducir la huella de carbono en cada desplazamiento,
+            ofreciendo soluciones que combinan tecnología, conciencia ambiental
+            y bienestar ciudadano.
+          </p>
+        </div>
+
+        <div class="imagen-empresa">
+          <img
+            height="700"
+            width="800"
+            src="imagenes/lt.png"
+            alt="Imagen de EcoRoad"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-rutas">
+      <div class="contenedor-empresa">
+        <div class="texto-empresa">
+          <h1>Soluciones</h1>
+          <p>
+            La ecosostenibilidad busca equilibrar el desarrollo humano con la
+            protección del entorno, promoviendo el uso responsable de recursos,
+            la eficiencia energética y la reducción de emisiones. Su objetivo es
+            garantizar bienestar presente sin comprometer la salud del planeta
+            para las futuras generaciones.
+          </p>
+          <p>
+            Para lograrlo, se impulsan prácticas como la movilidad sostenible,
+            la gestión adecuada de residuos, el ecodiseño y la transición hacia
+            energías limpias. Pequeñas acciones diarias, sumadas a decisiones
+            estratégicas en empresas y gobiernos, crean un impacto positivo y
+            medible en nuestras ciudades y comunidades.
+          </p>
+        </div>
+
+        <div class="video-empresa">
+          <!-- Video de YouTube: https://www.youtube.com/watch?v=T4jyoBVeXHM -->
+          <div
+            class="video-wrapper"
+            role="region"
+            aria-label="Video sobre ecosostenibilidad"
+          >
+            <iframe
+              title="Video de YouTube sobre ecosostenibilidad"
+              src="https://www.youtube.com/embed/T4jyoBVeXHM"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-registro">
+      <div class="registro-card">
+        <h2>Formulario de Registro</h2>
+        <p class="sub">Complete todos los campos</p>
+
+        <form action="#" method="post" class="form-registro" novalidate>
+          <!-- Nombres -->
+          <div class="form-row">
+            <label for="nombres">Nombres completos:</label>
+            <input
+              type="text"
+              id="nombres"
+              name="nombres"
+              placeholder="Ingrese sus nombres"
+              required
+            />
+          </div>
+
+          <!-- País -->
+          <div class="form-row">
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required>
+              <option value="">seleccione un país</option>
+              <option value="pe">Perú</option>
+              <option value="mx">México</option>
+              <option value="ar">Argentina</option>
+              <option value="co">Colombia</option>
+              <option value="cl">Chile</option>
+              <option value="es">España</option>
+            </select>
+          </div>
+
+          <!-- Intereses -->
+          <fieldset class="form-group">
+            <legend>Interes:</legend>
+            <ul class="lista-interes">
+              <li>
+                <label
+                  ><input type="checkbox" name="interes" value="tecnologia" />
+                  Tecnologia</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="interes" value="educacion" />
+                  Educacion</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="interes" value="deporte" />
+                  Deporte</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="interes" value="arte" />
+                  Arte</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="interes" value="ciencia" />
+                  Ciencia</label
+                >
+              </li>
+            </ul>
+          </fieldset>
+
+          <!-- Sexo -->
+          <fieldset class="form-group">
+            <legend>Sexo:</legend>
+            <label class="radio-row">
+              <input type="radio" name="sexo" value="masculino" required />
+              Masculino
+            </label>
+            <label class="radio-row">
+              <input type="radio" name="sexo" value="femenino" />
+              Femenino
+            </label>
+          </fieldset>
+
+          <!-- Botón -->
+          <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+      </div>
+    </section>
+     <!-- Enlaces legales -->
+     <div class="footer-links">
+      <h4>Legal</h4>
+      <a href=""
+        >Política de Privacidad</a
+      >
+      <!-- Dentro de href llama a un documento pdf con la poltica-->
+      <a href="#">Términos y Condiciones</a>
+      <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+      <a href="">Protección de Datos</a>
+    </div>
+
+    <!-- Redes sociales con íconos personalizados -->
+    <div class="footer-social">
+      <h4>Síguenos</h4>
+      <a href="#"
+        ><img
+          src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+          alt="Facebook"
+          class="social-icon"
+      /></a>
+      <a href="#"
+        ><img
+          src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+          alt="Instagram"
+          class="social-icon"
+      /></a>
+      <a href="#"
+        ><img
+          src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+          alt="LinkedIn"
+          class="social-icon"
+      /></a>
+      <a href="#"
+        ><img
+          src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+          alt="Twitter"
+          class="social-icon"
+      /></a>
+    </div>
+  </div>
+</footer>
+</section>
+  </body>
+</html>
